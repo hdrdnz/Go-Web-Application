@@ -33,7 +33,6 @@ func (hum Human) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	//fmt.Fprintf(w, "name :%s\n lastname:%s\n age:%d\n", hum.Fname, hum.Lname, hum.Age)
 
 	//path bilgisi alınır.
-	fmt.Println("deneme")
 	fmt.Fprintf(w, "path:%s", r.URL.Path[1:])
 
 }
